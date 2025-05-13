@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class = "navbar-nav">
+    <li class = "nav-item">
+      <a routerLink="books" routerLinkActive="active" class="nav-link" >Book List</a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="create-book" routerLinkActive="active" class="nav-link" >Add Book</a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="borrowed-book" routerLinkActive="active" class="nav-link" >Borrowed Books</a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="available-book" routerLinkActive="active" class="nav-link" >Available Books</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

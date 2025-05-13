@@ -1,0 +1,54 @@
+# IDE: IntelliJ/WebStorm
+.idea/
+*.iml
+*.iws
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Angular output
+/dist/
+/out-tsc/
+/build/
+/tmp/
+/.cache/
+/.angular/
+/.angular-cache/
+
+# Node dependencies
+/node_modules/
+
+# Testing
+/coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (ak máš citlivé údaje)
+.env
+.env.local
+.env.*.local
+
+# Compiled files
+*.js
+*.js.map
+
+# Editor swap/backup files
+*~ 
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# Angular language service
+/.vscode/
+
+# Optional: ignore compiled CSS from SCSS
+# *.css
+# *.css.map
+
+# Optional: ignore package-lock if používate yarn
+# package-lock.json

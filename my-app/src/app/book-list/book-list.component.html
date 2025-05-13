@@ -1,0 +1,28 @@
+<h2> Book List</h2>
+<table class = "table table-striped">
+  <thead>
+  <tr>
+    <th> Id </th>
+    <th> Name </th>
+    <th> Author </th>
+    <th> Borrowed by </th>
+    <th> From </th>
+    <th> Actions </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let book of books" >
+    <td> {{book.id}} </td>
+    <td> {{ book.title }} </td>
+    <td> {{ book.author }} </td>
+    <td> {{ book.borrowed.firstName + " " +  book.borrowed.lastName}} </td>
+    <td> {{ book.borrowed.from}}</td>
+        <td>
+          <button (click) = "updateBook(book.id)" class = "btn btn-info"> Edit </button>
+          <button (click) = "borrowBook(book.id)" class = "btn btn-warning" style="margin-left: 10px"> Borrow</button>
+          <button (click) = "returnBook(book.id)" class = "btn btn-warning" style="margin-left: 10px"> Return</button>
+          <button (click) = "deleteBook(book.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+        </td>
+  </tr>
+  </tbody>
+</table>

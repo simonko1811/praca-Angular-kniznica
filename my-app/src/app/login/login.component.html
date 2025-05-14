@@ -1,0 +1,19 @@
+<div class="col-md-6 offset-md-3">
+  <h3> Login form </h3>
+  <form (ngSubmit) = "onSubmit()">
+    <div *ngIf="!loginValid" style="color: red; margin-bottom: 0.5rem;">
+      Incorrect email or password
+    </div>
+    <div class="form-group">
+      <label> Username</label>
+      <input type="text" required class ="form-control" id = "username"
+             [(ngModel)] = "user.username" name = "username" >
+    </div>
+    <div class="form-group">
+      <label> Password</label>
+      <input type="password" required class ="form-control" id = "password"
+             [(ngModel)] = "user.password" name = "password">
+    </div>
+    <button class = "btn btn-success" type ="submit">Login</button>
+  </form>
+</div>

@@ -12,6 +12,7 @@ import { BorrowedBookComponent } from './borrowed-book/borrowed-book.component';
 import { AvailableBookComponent } from './available-book/available-book.component';
 import { ReturnBookComponent } from './return-book/return-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DeleteBookComponent } from './delete-book/delete-book.component';
     BorrowedBookComponent,
     AvailableBookComponent,
     ReturnBookComponent,
-    DeleteBookComponent
+    DeleteBookComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
